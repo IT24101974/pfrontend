@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
+  baseURL: "https://pbackend-production-3c2c.up.railway.app/api",  // ← Railway URL eka මෙතන දාන්න
 });
 
 export const fetchItems = () => API.get("/items");
